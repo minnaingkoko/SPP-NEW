@@ -1,32 +1,119 @@
-<footer class="container text-center my-6 p-8 text-gray3">
-    <div class="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray5 to-gray4 rounded-full"></div>
-    <div class="pt-10">Find an issue with this page? <a class="text-blue-500" href="{{ site.Data.links.github_content }}/{{ .File.Path }}">Fix it on GitHub</a></div>
-
-    <div class="py-3">
-        Need help? Email <a href="mailto:hello@fireship.io"><strong class="text-white font-bold">hello@fireship.io</strong></a>
+<footer class="footing">
+    <div class="footer-middle-block">
+        <div class="footer-col1">
+            <div class="logo">
+                <img src='/img/CompanyLogoAlt.png' alt="">
+            </div>
+            <div class="footer-intro">
+                Novelio is one of the most popular tech startups driving innovation.
+            </div>
+            <div class="ph-no">
+                {{ partial "svg/phoneIcon.svg"}}
+                <!-- <img src='img/phoneIcon.svg' alt="phone_icon" class="phNo_icon" /> -->
+                <div class="phNo">+959770033832, +959770033837</div>
+            </div>
+            <div class="email">
+                {{ partial "svg/emailIcon.svg"}}
+                <!-- <img src='img/emailIcon.svg' alt="email_icon" class="email_icon" /> -->
+                <div class="email-address">shanpyaephyotun966@gmail.com</div>
+            </div>
+            <div class="social-links">
+                <div class="social-circle">
+                    {{ partial "svg/facebook_icon.svg"}}
+                    <!-- <img src='img/facebook_icon.svg' alt="facebook_icon" class="facebook_icon" /> -->
+                </div>
+                <div class="social-circle">
+                    {{ partial "svg/instagram_icon.svg"}}
+                    <!-- <img src='img/instagram_icon.svg' alt="instagram_icon" class="instagram_icon" /> -->
+                </div>
+                <div class="social-circle">
+                    {{ partial "svg/twitter_icon.svg"}}
+                    <!-- <img src='img/twitter_icon.svg' alt="twitter_icon" class="twitter_icon" /> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrap">
+            <div class="footer-col2">
+                <div class="fc2-title">
+                    Menu
+                </div>
+                <div class="page">
+                    Home Page
+                </div>
+                <div class="page">
+                    About Us
+                </div>
+                <div class="page">
+                    Feature
+                </div>
+                <div class="page">
+                    Service
+                </div>
+                <div class="page">
+                    Blog
+                </div>
+                <div class="page">
+                    Single Blog
+                </div>
+                <div class="page">
+                    Pricing Plan
+                </div>
+            </div>
+            <div class="footer-col3">
+                <div class="fc3-title">
+                    Utility Pages
+                </div>
+                <div class="page">
+                    Start Here
+                </div>
+                <div class="page">
+                    Style Guide
+                </div>
+                <div class="page">
+                    404 Not Found
+                </div>
+                <div class="page">
+                    Password Protected
+                </div>
+                <div class="page">
+                    Licenses
+                </div>
+                <div class="page">
+                    Change Log
+                </div>
+                <div class="page">
+                    FAQ
+                </div>
+            </div>
+            <div class="footer-col4">
+                <div class="fc4-title">
+                    Template Pages
+                </div>
+                <div class="page">
+                    Sign Up Page
+                </div>
+                <div class="page">
+                    Sign In Page
+                </div>
+                <div class="page">
+                    Forgot Password
+                </div>
+                <div class="page">
+                    Terms & Conditions
+                </div>
+                <div class="page">
+                    Refund Policy
+                </div>
+                <div class="page">
+                    Coming Soon
+                </div>
+                <div class="page">
+                    Contact Us
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="flex justify-center items-center my-2">
-        <a href="{{ site.Data.links.youtube }}"><i class="w-6 inline-block mx-2">{{ partial "svg/youtube.svg"}}</i></a>
-        <a href="{{ site.Data.links.twitter }}"><i class="w-6 inline-block mx-2">{{ partial "svg/twitter.svg"}}</i></a>
-        <a href="{{ site.Data.links.github }}"><i class="w-6 inline-block mx-2">{{ partial "svg/github.svg"}}</i></a>
-        <a href="{{ site.Data.links.discord }}"><i class="w-6 inline-block mx-2">{{ partial "svg/discord.svg"}}</i></a>
+    <div class="footer-bottom-block">
+        Copyright © Shan Pyae Phyo General Services Co., Ltd | Designed by Brandbes - Powered by - MiracleDev
     </div>
-
-    <h6>Helpful Links</h6>
-
-    <div class="py-3">
-        <a href="/courses">Courses</a> | 
-        <a href="/lessons">Labs</a> | 
-        <a href="/snippets">Snippets</a> | 
-        <a href="/tags">Tags</a> | 
-        <a href="/contributors">Contrib</a> |
-        <a href="/privacy">Privacy</a> | 
-        <a href="/terms">Terms</a>
-    </div>
-
-    
-    <div class="text-xs">
-        Copyright ©  {{ now.Format "2006"}} Fireship LLC <br> 
-    </div>
-
 </footer>

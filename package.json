@@ -1,7 +1,7 @@
 {
-  "name": "fireship",
-  "version": "2.0.0",
-  "description": "Awesome content for developers",
+  "name": "ShanPyaePhyo",
+  "version": "1.0.0",
+  "description": "Oversea Employment Agency",
   "main": "index.ts",
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
     "deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\" --only hosting"
   },
   "keywords": [],
-  "author": "Jeff Delaney",
+  "author": "MiracleDev",
   "license": "ISC",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",

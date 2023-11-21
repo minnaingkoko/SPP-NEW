@@ -1,129 +1,303 @@
-{{ define "header" }} 
-	{{ partial "topnav" }} 
-{{ end }} 
-
 {{ define "main" }}
-<div class="prose dark:prose-invert min-w-full">
-  <div class="container">
-    <div class="flex flex-col md:flex-row mt-20">
-      <div
-        class="min-w-[50%] flex flex-col justify-center items-center text-center p-6"
-      >
-        <h1 class="text-6xl mb-0">
-          Learn to Code <span class="gradient-text">faster.</span>
-        </h1>
-        <p class="text-2xl text-gray3">
-          Fireship is a
-          <img-reveal src="/img/speed.gif"><span class="text-yellow-500 font-bold">blazingly fast</span></img-reveal>
-          &&
-          <img-reveal src="/img/cat.gif"><span class="text-pink-500 font-bold">highly-amusing</span></img-reveal>
-          way to level up your programming skills.
-        </p>
-        <a href="#truth" class="btn btn-green btn-glow">Start Here</a>
-      </div>
 
-      <div class="flex w-full relative items-center justify-center">
-        <div class="w-full mx-auto md:bg-[url('/img/tv.png')] bg-no-repeat bg-cover md:w-[500px] md:max-w-[700px] md:min-h-[300px] mt-20 md:mt-0">
-            <iframe
-              class="md:w-[330px] md:h-[185px] relative md:left-[48px] md:top-[54px] mx-auto md:mx-0 w-full aspect-video"
-              src="https://player.vimeo.com/video/599890291"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-            ></iframe>
+<div class="start">
+    {{ partial "topnav" }}
+
+    <div class="hero-wrapper">
+        <div class="hero-left">
+            <div class="hero-title">
+                Solutions for business life
+            </div>
+            <div class="hero-excerpt">
+                For startups, our business provides a comprehensive solution to streamline operations, manage projects,
+                and collaborate effectively. From task delegation to team communication.
+            </div>
+            <div class="hero-btns">
+                <div class="hero-btn">Get Started</div>
+                <div class="hero-btn-alt">Learn More</div>
+            </div>
         </div>
-
-      </div>
+        <div class="hero-right">
+            <img class="hero-img" src='img/hero.jpg' alt="company group">
+        </div>
     </div>
-
-
-	<div class="text-center mt-32 snap-proximity">
-		<scroll-show repeat="">
-			<a href="#truth" class="no-underline">
-				<h2 class="bg-red-500 inline-block text-gray7 px-6 py-4 text-6xl shadow-xl">Hard Truth</h2>
-				<span class="animate-bounce text-5xl block">
-					👇
-				</span>
-			</a>
-		</scroll-show>
-	</div>
-
-	<div class="md:h-screen grid place-content-center text-center relative" id="truth">
-
-			<div>
-				<scroll-show repeat="">
-					<p class="text-5xl text-gray3 px-4">
-						You  <img-reveal src="/img/sad.gif"><span class="text-red-500 animate-pulse font-display">can't</span></img-reveal> learn to code by watching videos
-					</p>
-				</scroll-show>
-				<scroll-show>
-					<a class="animate-bounce mb-[200px] text-2xl no-underline block" href="#solution">
-						i'm sad 😢
-					</a>
-				</scroll-show>
-
-			</div>
-	</div>
-
-	<div class="text-center md:h-screen grid place-content-center relative" id="solution">
-		<div>
-			<scroll-show>
-				<h2 class="bg-green-500 inline-block text-gray7 px-6 py-4 text-6xl shadow-xl">Solution</h2>
-			</scroll-show>
-			<scroll-show>
-				<p class="text-3xl text-gray4 max-w-3xl">Fireship is all about <img-reveal src="/img/build.gif"><span class="text-green-500 font-display animate-pulse">project-based</span></img-reveal> learning. I create short highly-focused videos that make learning to code addicting.</p>
-				<a class="animate-bounce mb-[200px] text-2xl no-underline block" href="#fun">
-					but like how? 🤔
-				</a>
-			</scroll-show>
-		</div>
-	</div>
-
-	<div class="text-center md:h-screen grid place-content-center relative" id="fun">
-		<div>
-			<scroll-show>
-				<h2 class="bg-purple-500 inline-block text-gray7 px-6 py-4 text-6xl shadow-xl">Have Fun</h2>
-			</scroll-show>
-			<scroll-show>
-				<p class="text-3xl text-gray4 max-w-3xl">I built this one-of-a-kind learning platform to give you <img-reveal src="/img/dance.gif"><span class="text-pink-500 font-display animate-pulse">dopamine</span></img-reveal> hits like XP and meme prizes for every little accomplishment</p>
-				<if-user>
-					<a class="animate-bounce mb-[200px] text-2xl no-underline block" href="#end">
-						you're signed in, sweet 🤟
-					</a>
-
-					<modal-action slot="signed-out" name="signin" type="open">
-						<span class="animate-bounce mb-[200px] text-2xl no-underline block cursor-pointer">
-							login now to start earning useless XP points 💎
-						</span>
-					</modal-action>	
-
-				</if-user>
-			</scroll-show>
-		</div>
-	</div>
-
-	<div class="text-center md:h-screen grid place-content-center relative" id="end">
-		<div>
-			<scroll-show>
-				<h2 class="bg-yellow-500 inline-block text-gray7 px-6 py-4 text-6xl shadow-xl">Let's Go</h2>
-			</scroll-show>
-			<scroll-show>
-				<p class="text-3xl text-gray4 max-w-3xl">There's tons of free content here, so <img-reveal src="/img/look.gif"><span class="text-yellow-500 font-display animate-pulse">play</span></img-reveal> around before you upgrade</p>
-				<a class="animate-bounce mb-[200px] text-2xl no-underline block" href="courses">
-					every course starts free, try it out 🚀
-				</a>
-			</scroll-show>
-		</div>
-	</div>
-	
-  </div>
-
-
 </div>
 
-{{ end }} 
+<section class="brand-section">
+    From start-ups to Fortune <span class="highlight">&nbsp;400+&nbsp;</span> we partner with brands of all sizes
+</section>
 
-{{ define "footer" }} 
-	{{ partial "footer" }} 
+<section class="feature-section">
+    <div class="feature-label">Our Feature</div>
+    <div class="feature-title">
+        The features that make our business unique
+    </div>
+    <div class="feature-block">
+        <div class="feature-row">
+            <div class="feature-col">
+                <div class="feature-left">
+                    <img src='img/featureIcon1.svg' alt="" />
+                </div>
+                <div class="feature-right">
+                    <div class="col-title">
+                        Qualitative Research
+                    </div>
+                    <div class="col-text">
+                        Exploring the Depths of Experience through Qualitative Research for Meaningful Insights.
+                    </div>
+                </div>
+            </div>
+            <div class="feature-col">
+                <div class="feature-left">
+                    <img src='img/featureIcon2.svg' alt="" />
+                </div>
+                <div class="feature-right">
+                    <div class="col-title">
+                        Social Marketing
+                    </div>
+                    <div class="col-text">
+                        Leveraging the Power of Social Marketing to Foster Meaningful Drive Impactful Results.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="feature-col">
+                <div class="feature-left">
+                    <img src='img/featureIcon3.svg' alt="" />
+                </div>
+                <div class="feature-right">
+                    <div class="col-title">
+                        Reporting & Analysis
+                    </div>
+                    <div class="col-text">
+                        Empowering Decision-Making through Comprehensive Reporting and In-Depth Analysis of Key Data
+                        Insights.
+                    </div>
+                </div>
+            </div>
+            <div class="feature-col">
+                <div class="feature-left">
+                    <img src='img/featureIcon4.svg' alt="" />
+                </div>
+                <div class="feature-right">
+                    <div class="col-title">
+                        People Science
+                    </div>
+                    <div class="col-text">
+                        Exploring the Intersection of Data for Actionable Insights into People's Behavior and
+                        Interactions.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="feature-col">
+                <div class="feature-left">
+                    <img src='img/featureIcon5.svg' alt="" />
+                </div>
+                <div class="feature-right">
+                    <div class="col-title">
+                        Crypto supported
+                    </div>
+                    <div class="col-text">
+                        Empowering Transactions and Security with Crypto Support for Trustworthy Digital Experiences..
+                    </div>
+                </div>
+            </div>
+            <div class="feature-col">
+                <div class="feature-left">
+                    <img src='img/featureIcon6.svg' alt="" />
+                </div>
+                <div class="feature-right">
+                    <div class="col-title">
+                        Automatic payments
+                    </div>
+                    <div class="col-text">
+                        Simplify Your Financial Journey with Automatic Payments for Seamless and Convenient Money
+                        Management.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefit-section">
+    <div class="benefit-left">
+        <div class="benefit-label">Our Benefits</div>
+        <div class="benefit-title">We are the next-gen business experience</div>
+        <div class="ben-col">
+            <div class="benefit-col">
+                <div class="benefit-icon">
+                    <div class="ben-circle">
+                        <img src='img/benefitIcon1.svg' alt="" />
+                    </div>
+                </div>
+                <div class="benefit-info">
+                    <div class="ben-info-label">Personalized campaigns</div>
+                    <div class="ben-info-text">Revolutionize your marketing with powerful personalized campaigns that
+                        drive results.</div>
+                </div>
+            </div>
+            <div class="benefit-col">
+                <div class="benefit-icon">
+                    <div class="ben-circle">
+                        <img src='img/benefitIcon2.svg' alt="" />
+                    </div>
+                </div>
+                <div class="benefit-info">
+                    <div class="ben-info-label">Email autoresponders</div>
+                    <div class="ben-info-text">Streamline your communication with email automation that engages
+                        customers.</div>
+                </div>
+            </div>
+        </div>
+        <div class="benefit-btn">Get Started</div>
+    </div>
+    <div class="benefit-right">
+        <div class="benefit-banner">
+            <img class="crop1" src='img/crop1.jpg' alt="">
+            <img class="crop2" src='img/crop2.jpg' alt="">
+        </div>
+    </div>
+</section>
+
+<section class="award-section">
+    <div class="award-left">
+        Easily view and ranking your sites.
+    </div>
+    <div class="award-right"></div>
+</section>
+
+<section class="solution-section">
+    <div class="solution-label">Secure and Reliable</div>
+    <div class="solution-title">The future of strategic business</div>
+    <div class="solution-row">
+        <div class="individual">
+            <img class="individual-img" src='img/individuals.jpg' alt="">
+            <div class="sol-title">Individuals</div>
+            <div class="sol-text">Our app is designed to cater to needs of individuals helping you.</div>
+        </div>
+        <div class="startup">
+            <img class="startup-img" src='img/startups.jpg' alt="">
+            <div class="sol-title">Startups</div>
+            <div class="sol-text">For startups, our app provides a comprehensive solution to streamline</div>
+        </div>
+        <div class="enterprise">
+            <img class="enterprise-img" src='img/enterprises.jpg' alt="">
+            <div class="sol-title">Enterprises</div>
+            <div class="sol-text">Our app is equipped to meet needs of large enterprises providing.</div>
+        </div>
+    </div>
+    <div class="sol-btn">Get Started</div>
+</section>
+
+<section class="client-feedback-section">
+    <div class="feedback-left">
+        <img class="feedback_banner" src='img/feedback_banner.jpg' alt="">
+        <div class="feed-over">
+            <div class="project-count">
+                <div class="pr-title">
+                    100+
+                </div>
+                <div class="pr-text">
+                    Total Project Done
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="customer-count">
+                <div class="cu-title">
+                    25k+
+                </div>
+                <div class="cu-text">
+                    Worldwide Customers
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-right">
+        <div class="feedRight-wrap">
+            <div class="feed-label">Client Feedback</div>
+            <div class="feed-title">People who already love our support</div>
+            <img class="feedback_icon" src='img/feedbackIcon.svg' alt="">
+            <div class="feed-text">This tech startup transformed our business with game-changing solutions, streamlining
+                operations, automating processes, and boosting efficiency. Their expertise and dedication were
+                remarkable.</div>
+            <div class="feed-person">Colin Mathieu</div>
+            <div class="feed-location">Los Angeles, USA</div>
+        </div>
+        <div class="feed-circle">
+            <div class="feed-left">
+                <img class="leftArrow_icon" src='img/leftArrowIcon.svg' alt="">
+            </div>
+            <div class="feed-right">
+                <img class="rightArrow_icon" src='img/rightArrowIcon.svg' alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-contribution-section">
+    <div class="team-left">
+        <div class="team-label">
+            Team Contribution
+        </div>
+        <div class="team-title">
+            Easy-to-use for connected team
+        </div>
+        <div class="team-text">
+            Empower your globally connected team with an intuitive, user-friendly platform for seamless collaboration,
+            productivity, success, growth, and innovation.
+        </div>
+        <div class="team-btn">
+            Get Started
+        </div>
+    </div>
+    <div class="team-right">
+        <img src='img/team.jpg' alt="team">
+    </div>
+</section>
+
+<section class="blog-section">
+    <div class="blog-label">
+        Our blog
+    </div>
+    <div class="blog-row">
+        <div class="blog-title">
+            Browse our articles & resources
+        </div>
+        <div class="browse-blog">
+            Browse all Blogs
+        </div>
+    </div>
+    <div class="blog-items">
+        <div class="blog-item">
+            <img class="blog-img" src='img/blog1.jpg' alt='blog1'>
+            <div class="blog-sec">
+                <div class="blog-type">Startup</div>
+                <div class="blog-date">May 16, 2023</div>
+            </div>
+            <div class="blogItem-title">
+                Creating a Productive and Inspiring Work Environment
+            </div>
+        </div>
+        <div class="blog-item">
+            <img class="blog-img" src='img/blog2.jpg' alt="blog2">
+            <div class="blog-sec">
+                <div class="blog-type">Genesis Tech</div>
+                <div class="blog-date">May 15, 2023</div>
+            </div>
+            <div class="blogItem-title">
+                Winning Strategies for Launching and Scaling
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "footer" }}
 {{ end }}
